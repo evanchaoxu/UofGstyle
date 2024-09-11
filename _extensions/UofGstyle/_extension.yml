@@ -1,0 +1,25 @@
+title: University of Glasgow Quarto Template
+author: Chao Xu
+version: 0.0.1
+contributes:
+  formats: 
+    revealjs:
+      logo: UofGlogo.png
+      theme: UofGstyle.scss
+      height: 900
+      width: 1600
+      auto-stretch: false
+      title-slide-attributes:
+        data-background-color: "#D9DBDB"
+    html:
+      theme: [default, UofGstyle.scss]
+    pdf:
+      include-in-header: 
+       - "UofGpdf.tex"
+       - "columns.tex"
+      toc: true
+      toc-depth: 2
+      fontsize: 12pt
+      code-block-bg: lightgrey
+      linkcolor: UofGred
+      urlcolor: UofGred
